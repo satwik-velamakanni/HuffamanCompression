@@ -1,20 +1,18 @@
-# Huffman Compression Algorithm in C++
+# Huffman Compression Tool in C++
 
-This project implements a file compression tool using the Huffman Coding Algorithm in C++. Huffman coding is a lossless data compression algorithm that uses variable-length codes to represent characters based on their frequencies. This implementation compresses files by creating an optimal binary tree for encoding and decoding.
+This project implements a file compression utility using the **Huffman Coding Algorithm** in C++. Huffman coding is a powerful **lossless data compression technique** that assigns variable-length binary codes to characters based on their frequency in the input file. The tool is designed to compress and decompress files efficiently by constructing an optimal binary tree for encoding and decoding data.
 
-## Features
+## Key Features
 
-- **Efficient Compression:** Uses Huffman coding to achieve lossless file compression.
-- **File Input/Output:** Compresses and decompresses files by reading from and writing to the file system.
-- **Custom Huffman Tree:** Builds a Huffman Tree based on the frequency of characters in the input file.
-- **Binary File Support:** Supports compression of binary files.
-- **Decompression:** Ability to decode a compressed file back to its original state.
+- **Lossless Compression:** Utilizes the Huffman algorithm to compress data without any loss of information.
+- **File Handling:** Supports reading files from the system for compression and writing the compressed data to the file system.
+- **Huffman Tree Construction:** Dynamically builds a custom binary tree based on character frequencies from the input data.
+- **Binary File Compatibility:** Capable of compressing both text and binary files.
+- **Full Decompression Support:** Restores compressed files to their original form using the Huffman tree.
 
-## How It Works
+## Compression Workflow
 
-1. **Frequency Calculation:** The algorithm first reads the input file to calculate the frequency of each character.
-2. **Huffman Tree Construction:** A binary tree is built, where characters with higher frequencies have shorter codes.
-3. **File Compression:** Each character is replaced with its corresponding binary code to reduce file size.
-4. **File Decompression:** The encoded file is decoded using the Huffman Tree to reconstruct the original file.
-
-
+1. **Character Frequency Analysis:** Reads the file and counts how often each character occurs.
+2. **Building the Huffman Tree:** Constructs a binary tree where frequently occurring characters get shorter binary codes.
+3. **Compression Process:** Replaces each character in the file with its unique binary code, reducing the overall file size.
+4. **Decompression Process:** Decodes the compressed file back to its original state by traversing the Huffman tree.
